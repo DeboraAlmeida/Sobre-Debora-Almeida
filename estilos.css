@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background-color: #8eaebd;
+  /*background-image: url(./Images/flores.jpeg);
+  backgroun-size: auto 100vh;*/
+  font-family: sans-serif;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding-left: 0;
+
+  background-color: #a7d2cb;
+}
+
+.menu li {
+  padding: 5px 0;
+
+  list-style: none;
+}
+
+a {
+  color: #0f1626;
+  text-shadow: 0.5px 0.5px #cae4db;
+
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #30415d;
+
+  text-decoration: underline;
+}
+
+.page-title, .page-subtitle {
+  color: #00303f; /*#0f1626;*/
+  text-shadow: 1px 1px #fff;
+
+  text-align: center;
+}
+
+.page-subtitle {
+  padding: 1px;
+
+  text-decoration: overline underline;
+}
