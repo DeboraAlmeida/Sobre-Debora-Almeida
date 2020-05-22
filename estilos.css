@@ -1,9 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: #8eaebd;
-  /*background-image: url(./Images/flores.jpeg);
-  backgroun-size: auto 100vh;*/
   font-family: sans-serif;
+}
+
+header {
+  height: 100vh;
+  background-image: url(./Images/homeoffice04.jpeg);
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+@media (max-width: 728px) {
+  header {
+    height: 50vh;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu ul {
@@ -15,10 +41,13 @@ body {
   background-color: #a7d2cb;
 }
 
-.menu li {
-  padding: 5px 0;
+.menu a {
+  display: block;
+  padding: 10px;
+}
 
-  list-style: none;
+.menu li {
+   list-style: none;
 }
 
 a {
@@ -35,14 +64,38 @@ a:hover, a:focus {
 }
 
 .page-title, .page-subtitle {
-  color: #00303f; /*#0f1626;*/
-  text-shadow: 1px 1px #fff;
+  color: #0f1626; 
+  text-shadow: 1px 1px 10px whitesmoke;
 
   text-align: center;
 }
 
+.page-title {
+  margin-top: 4rem;
+}
+
 .page-subtitle {
+  margin-top: 0.5rem;
   padding: 1px;
 
   text-decoration: overline underline;
+}
+
+.portfolio__img {
+  width: 25%;
+  height: 25%;
+  border-radius: 5%;
+}
+
+.imersao {
+  padding: 20px;
+
+  background-color: #a7d2cb;
+
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.marca {
+  margin-bottom: 10px;
 }
